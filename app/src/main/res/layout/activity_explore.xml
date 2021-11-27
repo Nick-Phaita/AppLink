@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreActivity">
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/explore_app_bar_layout">
+
+    </include>
+    <RelativeLayout
+        android:id="@+id/myLayout"
+        android:layout_below="@id/explore_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/simpleTextID"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="20dp"
+    android:text="Search"
+    android:textSize="13sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:background="@color/black"
+    android:layout_marginStart="20dp" />
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:id="@+id/search_box_input"
+            android:layout_below="@id/simpleTextID"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Search here"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_person_search"/>
+        <ImageButton
+            android:id="@+id/search_followers_btn"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/simpleTextID"
+            android:layout_toEndOf="@id/search_box_input"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_search"
+            android:layout_toRightOf="@id/search_box_input" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myLayout"
+        android:layout_margin="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

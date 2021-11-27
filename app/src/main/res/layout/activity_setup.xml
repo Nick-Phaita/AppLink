@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity"
+    android:background="@drawable/header">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img" />
+
+    <EditText
+        android:id="@+id/editT_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_pic"
+        android:layout_marginVertical="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_username"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Username"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/editT_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editT_username"
+        android:layout_marginVertical="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_names"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Full names"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/editT_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editT_fullname"
+        android:layout_marginVertical="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_gender"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Gender"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <EditText
+        android:id="@+id/T_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editT_gender"
+        android:layout_marginVertical="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:gravity="start|top"
+        android:padding="14dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:drawableLeftCompat="@drawable/ic_email2" />
+
+    <EditText
+        android:id="@+id/editT_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/T_email"
+        android:layout_marginVertical="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_description"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description (Optional)"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editT_description"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+        android:padding="14dp"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

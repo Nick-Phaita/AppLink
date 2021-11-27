@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644490662144",
+    "project_id": "applink-39865",
+    "storage_bucket": "applink-39865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644490662144:android:8435a2b3b29b64946d23e5",
+        "android_client_info": {
+          "package_name": "com.example.applink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644490662144-oa7vkt40b27jqu4a2f74gkk9cfr2q3d4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBo8YFD4S_KTJqwIxNep_nQ6xa9a1F5OI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644490662144-oa7vkt40b27jqu4a2f74gkk9cfr2q3d4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
